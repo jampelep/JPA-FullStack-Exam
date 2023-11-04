@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj": {
+    "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj",
         "projectName": "JPA-WebApiApp",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp\\JPA-WebApiApp.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
