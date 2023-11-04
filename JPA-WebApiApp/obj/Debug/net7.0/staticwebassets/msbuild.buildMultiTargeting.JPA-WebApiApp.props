@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\JPA-WebApiApp.props" />
+</Project>
