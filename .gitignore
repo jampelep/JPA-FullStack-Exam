@@ -54,3 +54,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+*.pack
+JPA-Web-Angular/.angular/cache/
+JPA-Web-Angular/node_modules/.bin/
