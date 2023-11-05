@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj": {}
+    "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj": {
+    "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj",
         "projectName": "JPA-WebApiApp-UnitTest",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\JPA-WebApiApp-UnitTest.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Projects\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Documents\\JPA-FullStack-Exam\\JPA-WebApiApp-UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
