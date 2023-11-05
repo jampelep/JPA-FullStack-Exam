@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   isButtonConvertDisabled: boolean = false;
   isButtonCancelDisabled: boolean = true;
   loadingDots = '';
+  isCancelled: boolean = false;
 
   constructor() {
     this.myForm = new FormGroup({
@@ -39,6 +40,7 @@ export class AppComponent implements OnInit {
       console.log('INPUT TEXT: ' + this.myForm.get('textInput')?.value);
       this.isButtonConvertDisabled = true;
       this.isButtonCancelDisabled = false;
+	  this.isCancelled = false;
       this.fetchDataFromApi();
     }
   }
@@ -49,6 +51,7 @@ export class AppComponent implements OnInit {
       this.abortController = undefined;
       this.isButtonConvertDisabled = false;
       this.isButtonCancelDisabled = true;
+	  this.isCancelled = true;
     }
   }
 
@@ -99,7 +102,10 @@ export class AppComponent implements OnInit {
         this.isButtonConvertDisabled = false;
         this.isButtonCancelDisabled = true;
         console.log(error.message);
-        this.ngtxtOutput = error.message;
+		
+		if(!this.isCancelled){
+			this.ngtxtOutput = error.message;
+		}
       }
     }
   }
