@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using JPA_WebApiApp.Service.Interface;
+using Microsoft.AspNetCore.Mvc;
 using System.Text;
 
 namespace JPA_WebApiApp.Controllers
@@ -7,10 +8,18 @@ namespace JPA_WebApiApp.Controllers
     [ApiController]
     public class ConverterController : ControllerBase
     {
+        private readonly IEncoderService _encoderService;
+
+        public ConverterController(IEncoderService encoderService)
+        {
+            _encoderService = encoderService;
+        }
+
         [HttpGet]
         public async IAsyncEnumerable<char> EncodeToBase64(string text, CancellationToken cancellationToken)
         {
             Console.WriteLine("---Encoding Starts...");
+
             //validation
             if (string.IsNullOrEmpty(text))
             {
@@ -29,12 +38,10 @@ namespace JPA_WebApiApp.Controllers
             }
 
             //encode string to Base64
-            byte[] bytes = Encoding.UTF8.GetBytes(text);
-            string base64Text = Convert.ToBase64String(bytes);
-            var characterArray = base64Text.ToCharArray();
+            var base64Value = _encoderService.GetBase64(text);
 
             //iterate each character
-            foreach (var character in characterArray)
+            foreach (var character in base64Value.ToCharArray())
             {
                 cancellationToken.ThrowIfCancellationRequested();
                 Console.WriteLine(character.ToString());
