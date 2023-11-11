@@ -7,10 +7,10 @@ JPA-WebApiApp/bin/
 JPA-WebApiApp/bin/Debug/
 JPA-WebApiApp/obj/
 JPA-WebApiApp/obj/Debug/
-JPA-WebApiApp-UnitTest/bin
-JPA-WebApiApp-UnitTest/bin/Debug
-JPA-WebApiApp-UnitTest/obj
-JPA-WebApiApp-UnitTest/obj/Debug
+JPA-WebApiApp-UnitTest/bin/
+JPA-WebApiApp-UnitTest/bin/Debug/
+JPA-WebApiApp-UnitTest/obj/
+JPA-WebApiApp-UnitTest/obj/Debug/
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
