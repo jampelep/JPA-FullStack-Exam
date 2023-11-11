@@ -1,6 +1,7 @@
 using JPA_WebApiApp.Controllers;
 using JPA_WebApiApp.Service;
-using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.Extensions.Logging;
+using Moq;
 
 namespace JPA_WebApiApp_UnitTest
 {
@@ -9,13 +10,15 @@ namespace JPA_WebApiApp_UnitTest
         #region Members
         EncoderService? _encoderService { get; set; }
         ConverterController? _converterController { get; set; }
+        ILogger<EncoderService> _logger { get; set; }
         #endregion
 
         #region Constructor        
         [SetUp]
         public void Setup()
         {
-            _encoderService = new EncoderService();
+            var mLogger = new Mock<ILogger<EncoderService>>();
+            _encoderService = new EncoderService(mLogger.Object);
             _converterController = new ConverterController(_encoderService);
         }
         #endregion
@@ -42,18 +45,17 @@ namespace JPA_WebApiApp_UnitTest
         public async Task TestEncodeToBase64Controller(string inputs)
         {
             // Arrange
-            string inputText = "Your input text"; // Provide a sample input
             var cancellationToken = new CancellationToken();
 
             // Act
             var result = new List<char>();
-            await foreach (var character in _converterController?.EncodeToBase64(inputText, cancellationToken))
+            await foreach (var character in _converterController?.EncodeToBase64(inputs, cancellationToken))
             {
                 result.Add(character);
             }
 
             // Assert
-            var expectedResult = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(inputText))
+            var expectedResult = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(inputs))
                 .ToCharArray()
                 .ToList();
             CollectionAssert.AreEqual(expectedResult, result);
